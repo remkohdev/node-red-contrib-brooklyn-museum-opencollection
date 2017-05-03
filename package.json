@@ -7,7 +7,7 @@
     "keywords": [ "node-red", "brooklyn-museum", "oai", "art", "museum" ],
     "node-red"     : {
         "nodes": {
-            "brooklyn-museum": "nodes/brooklynmuseum.js"
+            "brooklyn-museum": "brooklynmuseum.js"
         }
     }
 }
