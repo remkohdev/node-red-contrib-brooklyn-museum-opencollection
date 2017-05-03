@@ -1,0 +1,13 @@
+{
+    "name"         : "node-red-contrib-brooklyn-museum-opencollection",
+    "version"      : "0.0.1",
+    "description"  : "Nodes for node-red to access the Brooklyn Museum Opencollection API.",
+    "dependencies": {
+    },
+    "keywords": [ "node-red", "brooklyn-museum", "oai", "art", "museum" ],
+    "node-red"     : {
+        "nodes": {
+            "brooklyn-museum": "nodes/brooklynmuseum.js"
+        }
+    }
+}

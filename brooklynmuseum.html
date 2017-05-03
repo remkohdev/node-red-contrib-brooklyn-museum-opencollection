@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('collection', {
+        category: 'brooklyn museum',
+        color: '#00f000',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"collection";
+        },
+        credentials: {
+            apikey: {type: "text"}
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="collection">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-apikey"><i class="icon-tag"></i> API Key</label>
+        <input type="text" id="node-input-apikey">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="collection">
+    <p>A node to access the 'GET /collection' of the Brooklyn Museum Opencollection API.</p>
+</script>
