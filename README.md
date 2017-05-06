@@ -1,7 +1,10 @@
 Node-RED Nodes for Brooklyn Museum
 ==================================
 
-### New in version 0.0.5
+### New in version 0.0.7
+- README.md corrections.
+
+### New in version 0.0.6
 - README.md corrections.
 
 ### New in version 0.0.5
