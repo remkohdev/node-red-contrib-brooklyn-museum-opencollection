@@ -3,7 +3,8 @@
         category: 'brooklyn museum',
         color: '#00f000',
         defaults: {
-            name: {value:""}
+            collectionid: { value:"" }, 
+            name: { value:"" }
         },
         inputs:1,
         outputs:1,
@@ -23,11 +24,14 @@
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
     <div class="form-row">
+        <label for="node-input-collectionid"><i class="icon-tag"></i> Collection ID</label>
+        <input type="text" id="node-input-collectionid" placeholder="[Collection ID]">
+    </div>
+    <div class="form-row">
         <label for="node-input-apikey"><i class="icon-tag"></i> API Key</label>
         <input type="text" id="node-input-apikey">
     </div>
 </script>
-
 <script type="text/x-red" data-help-name="collection">
     <p>A node to access the 'GET /collection' of the Brooklyn Museum Opencollection API.</p>
 </script>

@@ -1,13 +1,29 @@
 {
     "name"         : "node-red-contrib-brooklyn-museum-opencollection",
-    "version"      : "0.0.3",
-    "description"  : "Nodes for node-red to access the Brooklyn Museum Opencollection API.",
+    "version"      : "0.0.5",
+    "description"  : "A collection of Node-RED nodes to access the Brooklyn Museum Opencollection API v2.",
     "dependencies": {
     },
-    "keywords": [ "node-red", "brooklyn-museum", "oai", "art", "museum" ],
+    "repository" : {
+        "type":"git",
+        "url":"https://github.com/remkohdev/node-red-contrib-brooklyn-museum-opencollection.git"
+    },
+    "license": "MIT",
+    "keywords": [ 
+        "node-red", 
+        "brooklyn-museum", 
+        "oai", 
+        "art", 
+        "museum",
+        "luce" 
+    ],
     "node-red"     : {
         "nodes": {
-            "brooklyn-museum": "brooklynmuseum.js"
+            "brooklyn-museum-collection": "opencollection-v2/collection/brooklyn-museum-collection.js",
+            "brooklyn-museum-exhibition": "opencollection-v2/exhibition/brooklyn-museum-exhibition.js"
         }
-    }
+    },
+    "contributors": [
+        {"name": "Remko de Knikker"}
+    ]
 }
